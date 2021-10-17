@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display";
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  max-width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 5vw;
+  box-shadow: 0 1rem 3rem hsl(225, 100%, 94%);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  /* padding-bottom: 0; */
+  gap: 1rem;
+}
+
+.card-title {
+  color: hsl(223, 47%, 23%);
+}
+
+.card-summary {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.plan-title {
+  font-weight: 700;
+}
+
+.plan-price {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-change {
+  text-decoration: underline;
+  cursor: pointer;
+  color: hsl(245, 75%, 52%);
+  transition: color 0.1s ease-out;
+}
+.plan-change:hover {
+  color: hsl(245, 75%, 62%);
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  /* justify-content: ce; */
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 900;
+  font-size: 17px;
+  box-shadow: 0 0.5rem 3rem hsla(245, 75%, 52%, 0.4);
+  transition: background-color 0.1s ease-out;
+}
+.primary-btn:hover {
+  background-color: hsl(245, 75%, 62%);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+}
